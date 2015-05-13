@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<link rel="stylesheet" href="{{ site.baseurl }}/css/home.css">
+<div class="home_content">
+
+   <img class="photo" src="http://placehold.it/300x300"></img>
+   <div class="about_me">
+      <h1>About me</h1>
+      <p>I am an incoming Computer Science and Engineering Ph.D. student at University of Michigan Ann Arbor, where I plan to work with Jia Deng in the area of Computer Vision. I graduated (most likely) summa cum laude from University of Massachusetts Amherst in 2015, where I received a B.S. degree in Computer Science. During my junior year, I was inducted into the UMass Amherst chapter of Phi Beta Kappa.</p>
+      <p>The majority of my research at UMass was as a member of the RIPPLES lab, which specializes in new software systems for capturing and presenting lectures. I worked on various aspects of the Presentations Automatically Organized from Lectures (PAOL) system, including video conversion, whiteboard processing, multithreading, and the graphical user interface. During the 2012 spring and fall semesters, I worked with the Center for e-Design under the instruction of Jack Wileden and Sundar Krishnamurty, where I primarily worked on program that converted models between Computer-Aided Design (CAD) systems.</p>
+      <p>I was also a member of UMass' Commonwealth Honors College (CHC), where I (most likely) graduated as a Commonwealth Honors College Scholar with Greatest Distinction. As part of CHC's Departmental Honors track, I completed an Honors Thesis on detecting marker strokes from whiteboard images efficiently.</p>
+      <p>From the UMass School of Computer Science (now known as the College of Information and Computer Sciences), I received the Outstanding Achievement in Artificial Intelligence Award, which is given to a top student who has excelled in both academic and research-oriented endeavors in AI. I also received the Cisco Award for Outstanding Achievement and course commendations in many classes.</p>
+   </div>
+
+   <div class="awards">
+      <h1>Awards</h1>
+      <ul>
+         <li>Outstanding Achievement in Artificial Intelligence Award </li>
+         <li>Honors Dean's Award</li>
+         <li>Honors Research Grant</li>
+         <li>Research Assistant Fellowship</li>
+         <li>Cisco Award for Outstanding Achievement</li>
+         <li>Course Commendations in CMPSCI 220, 240, 250, and 585 (UMass)</li>
+      </ul>
+   </div>
+
+   <div class="extracurricular_interests">
+      <h1>Extracurricular interests</h1>
+      <p>In my spare time, I like singing, swimming, and playing Ultimate Frisbee!</p>
+   </div>
+
+   <div class="news">
+      <h1>News</h1>
+      <ul>
+         {% for post in site.categories.news %}
+            <li><a href="{{ post.url }}">{{ post.date | date: "%B %e, %Y" }}: {{ post.news-line }}</a></li>
+         {% endfor %}
+      </ul>
+   </div>
+
+</div>

@@ -3,12 +3,8 @@ layout: page
 title: Contact
 ---
 
-Some information about you!
+There are many ways you can reach me!
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+* Email: szetor [at] umich [dot] edu
+* GitHub: [rszeto](https://github.com/rszeto)
+* LinkedIn: [rbszeto](https://www.linkedin.com/in/rbszeto)

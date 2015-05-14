@@ -78,3 +78,5 @@ exclude:
 collections:
   projects:
     output: true
+  publications:
+    output: false

@@ -35,16 +35,22 @@ layout: default
     </ul>
   </div>
   
-  {% if page.publications %}
+  {% if page.publicationIds %}
     <div class="publications">
       <h2>Publications</h2>
       <ul>
-        {% for publication in page.publications %}
-          <li>{{ publication.title }}</li>
+        {% for pubId in page.publicationIds %}
+          {% assign publication = site.data.publications[pubId.id] %}
+          <li class="publication">
+            <p class="title">{{ publication.title }}</p>
+            <p class="authors">{{ publication.authors }}</p>
+            <p class="venue"> {{ publication.venue }}</p>
+          </li>
         {% endfor %}
       </ul>
     </div>
   {% endif %}
+  
 </article>
 
 

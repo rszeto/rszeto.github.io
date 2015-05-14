@@ -4,10 +4,11 @@ title: Publications
 ---
 <link rel="stylesheet" href="{{ site.baseurl }}/css/publications.css">
 
-{% for publication in site.publications %}
-<div class="publication">
-   <p class="title">{{ publication.title }}</p>
-   <p class="authors">{{ publication.authors }}</p>
-   <p class="venue">In {{ publication.venue }}, {{ publication.year }}</p>
-</div>
+{% for pub_hash in site.data.publications %}
+   <div class="publication">
+      {% assign publication = pub_hash[1] %}
+      <p class="title">{{ publication.title }}</p>
+      <p class="authors">{{ publication.authors }}</p>
+      <p class="venue">In {{ publication.venue }}, {{ publication.year }}</p>
+   </div>
 {% endfor %}

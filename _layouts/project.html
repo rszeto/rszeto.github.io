@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<link rel="stylesheet" href="{{ site.baseurl }}/css/project.css">
 
 <article class="project">
   <h1>{{ page.title }}</h1>
@@ -38,16 +39,16 @@ layout: default
   {% if page.publicationIds %}
     <div class="publications">
       <h2>Publications</h2>
-      <ul>
         {% for pubId in page.publicationIds %}
           {% assign publication = site.data.publications[pubId.id] %}
-          <li class="publication">
-            <p class="title">{{ publication.title }}</p>
-            <p class="authors">{{ publication.authors }}</p>
-            <p class="venue"> {{ publication.venue }}</p>
-          </li>
+          <div class="publication">
+            <p>
+               <span class="title">{{ publication.title }}</span><br />
+               <span class="authors">{{ publication.authors }}</span><br />
+               <span class="venue">{{ publication.venue }}</span><br />
+            </p>
+          </div>
         {% endfor %}
-      </ul>
     </div>
   {% endif %}
   

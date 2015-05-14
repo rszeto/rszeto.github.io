@@ -6,9 +6,11 @@ title: Publications
 
 {% for pub_hash in site.data.publications %}
    <div class="publication">
-      {% assign publication = pub_hash[1] %}
-      <p class="title">{{ publication.title }}</p>
-      <p class="authors">{{ publication.authors }}</p>
-      <p class="venue">In {{ publication.venue }}, {{ publication.year }}</p>
+      <p>
+         {% assign publication = pub_hash[1] %}
+         <span class="title">{{ publication.title }}</span><br />
+         <span class="authors">{{ publication.authors }}</span><br />
+         <span class="venue">In {{ publication.venue }}, {{ publication.year }}</span><br />
+      </p>
    </div>
 {% endfor %}

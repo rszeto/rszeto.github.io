@@ -40,7 +40,7 @@ layout: default
     <div class="publications">
       <h2>Publications</h2>
         {% for pubId in page.publicationIds %}
-          {% assign publication = site.data.publications[pubId.id] %}
+          {% assign publication = site.data.publications[pubId] %}
           <div class="publication">
             <p>
                <span class="title">{{ publication.title }}</span><br />

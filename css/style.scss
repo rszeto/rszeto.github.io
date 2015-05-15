@@ -18,18 +18,30 @@ html {
 }
 
 body {
-	background: $white;
+  //background: orange;
+  background: url({{ site.baseurl }}/images/background.png) repeat scroll 0 0 transparent;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
 
+#main {
+  background: $white;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $lightGray;
+  border-radius: 3px;
+}
+/*
 .container {
   margin: 0 auto;
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
 }
-
+*/
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
@@ -145,7 +157,7 @@ img {
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
-
+/*
 //
 // .masthead
 //
@@ -236,7 +248,7 @@ nav {
     }
   }
 }
-
+*/
 //
 // .main
 //
@@ -270,7 +282,7 @@ nav {
     font-size: 15px;
   }
 }
-
+/*
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
@@ -282,12 +294,12 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
-
+*/
 article {
   text-align: justify;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
-@import "svg-icons";
+// @import "highlights";
+// @import "svg-icons";

@@ -4,13 +4,14 @@ title: Publications
 ---
 <link rel="stylesheet" href="{{ site.baseurl }}/css/publications.css">
 
-{% for pub_hash in site.data.publications %}
+{% assign pubs_sorted = site.publications | sort: "year" | reverse %}
+{% for publication in pubs_sorted %}
    <div class="publication">
       <p>
          {% assign publication = pub_hash[1] %}
          <span class="title">{{ publication.title }}</span><br />
          <span class="authors">{{ publication.authors }}</span><br />
-         <span class="venue">In {{ publication.venue }}, {{ publication.year }}</span><br />
+         <span class="venue">{{ publication.venue }}, {{ publication.year }}</span><br />
       </p>
    </div>
 {% endfor %}

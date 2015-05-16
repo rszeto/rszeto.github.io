@@ -37,22 +37,30 @@ layout: default
   </div>
   
   {% if page.publicationIds %}
+
+    {% comment %} Get and sort publications {% endcomment %}
+    {% assign pubs = "" | split: "|" %}
+    {% for pubId in page.publicationIds %}
+       {% assign pubAsArr = site.publications | where: 'id', pubId %}
+       {% assign publication = pubAsArr[0] %}
+       {% assign pubs = (pubs | push: publication) %}
+    {% endfor %}
+    {% assign pubs_sorted = (pubs | sort: "year" | reverse) %}
+    
     <div class="publications">
       <h2>Publications</h2>
-        {% for pubId in page.publicationIds %}
-          {% assign publication = site.data.publications[pubId] %}
+        {% for publication in pubs_sorted %}
           <div class="publication">
             <p>
                <span class="title">{{ publication.title }}</span><br />
                <span class="authors">{{ publication.authors }}</span><br />
-               <span class="venue">{{ publication.venue }}</span><br />
+               <span class="venue">{{ publication.venue }}, {{ publication.year }}</span><br />
             </p>
           </div>
         {% endfor %}
     </div>
   {% endif %}
   
+  <a href="{{ site.baseurl }}/projects">Back to Projects</a>
+  
 </article>
-
-
-<a href="{{ site.baseurl }}/projects">Back to Projects</a>

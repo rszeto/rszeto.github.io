@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
@@ -16,4 +16,24 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
+
+  {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+      <table class="pagination_table">
+        <tr>
+          {% if paginator.previous_page %}
+            <td class="prev_cell">
+              <a class="prev_link" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">Previous page</a>
+            </td>
+          {% endif %}
+
+          {% if paginator.next_page %}
+            <td class="next_cell">
+              <a class="next_link" href="{{ site.baseurl }}{{ paginator.next_page_path }}">Next page</a>
+            </td>
+          {% endif %}
+        </tr>
+      </table>
+    </div>
+   {% endif %}
 </div>

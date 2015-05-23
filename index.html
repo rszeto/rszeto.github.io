@@ -4,7 +4,7 @@ layout: default
 <link rel="stylesheet" href="{{ site.baseurl }}/css/home.css">
 <div class="home_content">
 
-   <img class="photo" src="http://placehold.it/300x300"></img>
+   <img class="photo" src="{{ site.baseurl}}/images/photo.jpg"></img>
    <div class="about_me">
       <h1>About me</h1>
       <p>I am an incoming Computer Science and Engineering Ph.D. student at University of Michigan Ann Arbor, where I plan to work with Jia Deng in the area of Computer Vision. I graduated summa cum laude* from University of Massachusetts Amherst in 2015, where I received a B.S. degree in Computer Science. During my junior year, I was inducted into the UMass Amherst chapter of Phi Beta Kappa.</p>
@@ -34,7 +34,7 @@ layout: default
    <div class="news">
       <h1>News</h1>
       <ul>
-         {% for post in site.categories.news %}
+         {% for post in site.categories.news limit:5 %}
             <li><a href="{{ post.url }}">{{ post.date | date: "%B %e, %Y" }}: {{ post.news-line }}</a></li>
          {% endfor %}
       </ul>

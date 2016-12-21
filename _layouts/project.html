@@ -41,7 +41,7 @@ layout: default
     {% comment %} Get and sort publications {% endcomment %}
     {% assign pubs = "" | split: "|" %}
     {% for pubId in page.publicationIds %}
-       {% assign pubAsArr = site.publications | where: 'id', pubId %}
+       {% assign pubAsArr = site.publications | where: 'publication_id', pubId %}
        {% assign publication = pubAsArr[0] %}
        {% assign pubs = (pubs | push: publication) %}
     {% endfor %}

@@ -23,18 +23,20 @@ layout: default
     </ul>
   </div>
   
-  <div class="students">
-    <h2>Associated students</h2>
-    <ul>
-      {% for student in page.students %}
-        {% if student.link %}
-          <li><a href="{{ student.link }}">{{ student.name }}</a></li>
-        {% else %}
-          <li>{{ student.name }}</li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
+  {% if page.students %}
+    <div class="students">
+      <h2>Associated students</h2>
+      <ul>
+        {% for student in page.students %}
+          {% if student.link %}
+            <li><a href="{{ student.link }}">{{ student.name }}</a></li>
+          {% else %}
+            <li>{{ student.name }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
   
   {% if page.publicationIds %}
 

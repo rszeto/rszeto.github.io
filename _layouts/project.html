@@ -47,7 +47,7 @@ layout: default
        {% assign publication = pubAsArr[0] %}
        {% assign pubs = (pubs | push: publication) %}
     {% endfor %}
-    {% assign pubs_sorted = (pubs | sort: "year" | reverse) %}
+    {% assign pubs_sorted = (pubs | sort: "date" | reverse) %}
     
     <div class="publications">
       <h2>Publications</h2>
@@ -56,7 +56,7 @@ layout: default
             <p>
                <span class="title">{{ publication.title }}</span><br />
                <span class="authors">{{ publication.authors }}</span><br />
-               <span class="venue">{{ publication.venue }}, {{ publication.year }}</span><br />
+               <span class="venue">{{ publication.venue }}, {{ publication.date | date: "%Y" }}</span><br />
             </p>
           </div>
         {% endfor %}

@@ -4,7 +4,7 @@ title: Publications
 ---
 <link rel="stylesheet" href="{{ site.baseurl }}/css/publications.css">
 
-{% assign pubs_sorted = site.publications | sort: "year" | reverse %}
+{% assign pubs_sorted = site.publications | sort: "date" | reverse %}
 {% for publication in pubs_sorted %}
    <div class="publication">
       <p>

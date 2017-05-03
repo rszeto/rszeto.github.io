@@ -1,6 +1,7 @@
 ---
 title: Presentations Automatically Organized from Lectures (PAOL)
 short_desc: Automated lecture capture system that I worked on at UMass Amherst.
+date: 2013-06-01
 advisors:
     - name: Rick Adrion
       link: https://www.cs.umass.edu/faculty/directory/adrion_richards

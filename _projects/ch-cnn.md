@@ -1,6 +1,7 @@
 ---
 title: Click Here&#58; Human-Localized Keypoints as Guidance for Viewpoint Estimation
 short_desc: Improving viewpoint estimation by integrating information about a single keypoint.
+date: 2017-03-17
 advisors:
     - name: Jason J. Corso
       link: web.eecs.umich.edu/~jjcorso

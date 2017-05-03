@@ -11,7 +11,7 @@ title: Publications
          {% assign publication = pub_hash[1] %}
          <span class="title">{{ publication.title }}</span><br />
          <span class="authors">{{ publication.authors }}</span><br />
-         <span class="venue">{{ publication.venue }}, {{ publication.year }}</span><br />
+         <span class="venue">{{ publication.venue }}, {{ publication.date | date: "%Y" }}</span><br />
       </p>
    </div>
 {% endfor %}

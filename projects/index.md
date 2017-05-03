@@ -3,9 +3,9 @@ layout: page
 title: Projects
 ---
 
-Below is a list of my projects.
-
-{% for project in site.projects %}
+{% assign projects_sorted = site.projects | sort: "date" | reverse %}
+{% for project in projects_sorted %}
+---
 ## [{{ project.title }}]({{ project.url }})
 {{ project.short_desc }}
 

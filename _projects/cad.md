@@ -1,6 +1,7 @@
 ---
 title: Feature-Based CAD Data Exchange
 short_desc: The project that I worked on with the UMass Center for e-Design during my REU in summer 2012.
+date: 2012-06-01
 advisors:
     - name: Jack Wileden
       link: https://www.cs.umass.edu/faculty/directory/wileden_jack

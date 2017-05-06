@@ -11,7 +11,6 @@ authors:
       link: https://www.cs.umass.edu/faculty/directory/adrion_richards
     - name: Tim Richards
       link: https://www.cs.umass.edu/faculty/directory/richards_tim
-publicationIds: [asee-paol-14, mtel-paol-15]
 layout: project
 ---
 
@@ -22,3 +21,7 @@ Internet accessibility has risen sharply over the past decade; as a result, onli
 ### Acknowledgements
 
 This project was done under the advisement of Dr. Paul Dickson, Dr. W. Richards Adrion, and Dr. Tim Richards. Many thanks to Raelen Recto, Tung (Steven) Pham, Hai (Freddy) Nguyen, and Brendan Murphy for their work on the accompanying Lecture-Viewer project.
+
+### Publications
+
+{% include pubs/dickson2015portable.html %}

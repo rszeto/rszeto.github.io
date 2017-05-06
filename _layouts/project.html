@@ -5,39 +5,26 @@ layout: default
 
 <article class="project">
   <h1>{{ page.title }}</h1>
+  <p id="authors">
+  {% for author in page.authors %}
+    {% if forloop.last %}
+      {% assign author_comma = '' %}
+    {% else %}
+      {% assign author_comma = ',' %}
+    {% endif %}
+
+    {% if author.link %}
+      <a href="{{ author.link }}">{{ author.name }}</a>{{ author_comma }}
+    {% else %}
+       {{ author.name }}{{ author_comma }}
+    {% endif %}
+  {% endfor %}
+  </p>
 
   <div class="entry">
     {{ content }}
   </div>
 
-  <div class="advisors">
-    <h2>Advisors</h2>
-    <ul>
-      {% for advisor in page.advisors %}
-        {% if advisor.link %}
-          <li><a href="{{ advisor.link }}">{{ advisor.name }}</a></li>
-        {% else %}
-          <li>{{ advisor.name }}</li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
-  
-  {% if page.students %}
-    <div class="students">
-      <h2>Associated students</h2>
-      <ul>
-        {% for student in page.students %}
-          {% if student.link %}
-            <li><a href="{{ student.link }}">{{ student.name }}</a></li>
-          {% else %}
-            <li>{{ student.name }}</li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-  {% endif %}
-  
   {% if page.publicationIds %}
 
     {% comment %} Get and sort publications {% endcomment %}

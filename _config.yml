@@ -79,8 +79,6 @@ exclude:
 collections:
   projects:
     output: true
-  publications:
-    output: false
 
 # Set number of blog posts to display per page
 paginate: 10

@@ -5,11 +5,11 @@ PYTHON=python
 
 all: _includes/pubs _includes/pubs/all-pubs.html
 
-_includes/pubs/all-pubs.html: _bib/pubs.bib _bib/all-publications.tmpl
+_includes/pubs/all-pubs.html: _pub/pubs.bib _pub/all-publications.tmpl
 	mkdir -p _includes/pubs
 	$(PYTHON) bibble/bibble.py $+ $@
 
-_includes/pubs: _bib/pubs.bib _bib/one-publication.tmpl
+_includes/pubs: _pub/pubs.bib _pub/one-publication.tmpl
 	mkdir -p _includes/pubs
 	$(PYTHON) bibble/bibble.py $+ $@ --save_individual
 

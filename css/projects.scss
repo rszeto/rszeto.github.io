@@ -1,0 +1,27 @@
+---
+---
+
+.projectsTable {
+	border-collapse: collapse;
+}
+
+.projectsTable td {
+	border-top: 1px solid #DDDDDD;
+}
+
+.projectsTable .projectThumbnailCell {
+	width: 200px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.projectsTable .projectShortDescCell {
+	padding-left: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.projectTitle {
+	font-size: 20px;
+	font-weight: bold;
+}

@@ -6,6 +6,7 @@ authors:
     - name: Ryan Szeto
     - name: Jason J. Corso
       link: web.eecs.umich.edu/~jjcorso
+thumbnail: /images/project_thumbs/ch-cnn.png
 layout: project
 ---
 

@@ -9,6 +9,7 @@ authors:
       link: https://www.cs.umass.edu/faculty/directory/wileden_jack
     - name: Sundar Krishnamurty
       link: http://mie.umass.edu/faculty/sundar-krishnamurty
+thumbnail: /images/project_thumbs/cad.png
 layout: project
 ---
 

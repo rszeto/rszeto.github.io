@@ -11,6 +11,7 @@ authors:
       link: https://www.cs.umass.edu/faculty/directory/adrion_richards
     - name: Tim Richards
       link: https://www.cs.umass.edu/faculty/directory/richards_tim
+thumbnail: /images/project_thumbs/umass-placeholder.png
 layout: project
 ---
 

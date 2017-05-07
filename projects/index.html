@@ -1,0 +1,21 @@
+---
+layout: page
+title: Projects
+---
+
+<link rel="stylesheet" href="{{ site.baseurl }}/css/projects.css">
+
+<table class="projectsTable">
+	{% assign projects_sorted = site.projects | sort: "date" | reverse %}
+	{% for project in projects_sorted %}
+	<tr>
+		<td class="projectThumbnailCell">
+			<img src="{{ project.thumbnail }}" />
+		</td>
+		<td class="projectShortDescCell">
+			<a href="{{ project.url }}"><span class="projectTitle">{{ project.title }}</span></a>
+			<p>{{ project.short_desc }}</p>
+		</td>
+	</tr>
+	{% endfor %}
+</table>

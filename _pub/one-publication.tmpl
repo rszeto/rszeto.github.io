@@ -1,4 +1,4 @@
-<table class="table">
+<table class="publicationTable">
 	<tbody>
 		<tr>
 			<td class="publication">
@@ -28,6 +28,12 @@
 					[<a href="{{ url|escape }}">{{ type|escape }}</a>]
 				{%- endfor %}
 				</span>
+				<div class="showBibtex">
+					[<a href="javascript:void(0)" class="showBibtexLink">BibTeX</a>]<br />
+					<div class="showBibtexContent" style="display:none">
+						<pre class="bibtex">{{ entry.fields["bibtex"] }}</pre>
+					</div>
+				</div>
 			</td>
 		</tr>
 	</tbody>

@@ -1,6 +1,6 @@
 <!-- Adapted from https://github.com/uwsampa/research-group-web -->
 
-<table class="table">
+<table class="publicationTable">
 <tbody>
 	{%- set prev_year = 1900 %}
 	{%- for entry in entries %}
@@ -39,6 +39,12 @@
 					[<a href="{{ url|escape }}">{{ type|escape }}</a>]
 				{%- endfor %}
 				</span>
+				<div class="showBibtex">
+					[<a href="javascript:void(0)" class="showBibtexLink">BibTeX</a>]<br />
+					<div class="showBibtexContent" style="display:none">
+						<pre class="bibtex">{{ entry.fields["bibtex"] }}</pre>
+					</div>
+				</div>
 			</td>
 		</tr>
 	{%- endfor %}

@@ -24,6 +24,7 @@ body {
   color: $darkGray;
 }
 
+/*
 #main {
   background: $white;
   max-width: 1000px;
@@ -33,6 +34,12 @@ body {
   border-width: 1px;
   border-color: $lightGray;
   border-radius: 3px;
+}
+*/
+
+#main {
+  background: $white;
+  padding: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -77,8 +84,9 @@ a {
   color: $blue;
   text-decoration: none;
 	cursor: pointer;
-  &:hover, &:active {
+  &:hover, &:active, &:focus {
     color: $blue;
+    text-decoration: none !important;
   }
 }
 

@@ -1,21 +1,27 @@
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/header.css"/>
 <div class="wrapper-masthead">
    <div class="container">
-      <header class="masthead clearfix">
-         <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}/images/um-logo.png" /></a>
-
-         <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">Ryan Szeto</a></h1>
-            <p class="site-description">Computer Science and Engineering, University of Michigan</p>
-         </div>
-
-         <nav>
-            <a href="{{ site.baseurl }}/">Home</a>
-            <a href="{{ site.baseurl }}/projects">Projects</a>
-            <a href="{{ site.baseurl }}/publications">Publications</a>
-            <a href="{{ site.baseurl }}/media/szetor-cv.pdf">CV</a>
-            <a href="{{ site.baseurl }}/contact">Contact</a>
-         </nav>
-      </header>
+      <div class="row" id="masthead-top"></div>
+      <div class="row" id="masthead-middle">
+         <header class="masthead clearfix">
+            <div class="site-info col-sm-6 vcenter">
+               <h1 class="site-name"><a href="{{ site.baseurl }}/">Ryan Szeto</a></h1>
+               <p class="site-description">Computer Science and Engineering, University of Michigan</p>
+            </div><!--
+            --><div class="site-avatar-container col-sm-6 vcenter">
+               <!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}/images/um-logo.png" /></a> -->
+               <a href="{{ site.baseurl }}/" class="site-avatar"><img src="https://www.eecs.umich.edu/eecs/resources/assets/EECS/EECS-marketing-formal.png" /></a>
+            </div>
+         </header>
+      </div>
+      <div class="row">
+            <nav class="col-sm-12">
+               <a href="{{ site.baseurl }}/">Home</a>
+               <a href="{{ site.baseurl }}/projects">Projects</a>
+               <a href="{{ site.baseurl }}/publications">Publications</a>
+               <a href="{{ site.baseurl }}/media/szetor-cv.pdf">CV</a>
+               <a href="{{ site.baseurl }}/contact">Contact</a>
+            </nav>
+      </div>
    </div>
 </div>

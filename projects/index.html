@@ -5,17 +5,16 @@ title: Projects
 
 <link rel="stylesheet" href="{{ site.baseurl }}/css/projects.css">
 
-<table class="projectsTable">
-	{% assign projects_sorted = site.projects | sort: "date" | reverse %}
-	{% for project in projects_sorted %}
-	<tr>
-		<td class="projectThumbnailCell">
-			<img src="{{ project.thumbnail }}" />
-		</td>
-		<td class="projectShortDescCell">
-			<a href="{{ project.url }}"><span class="projectTitle">{{ project.title }}</span></a>
-			<p>{{ project.short_desc }}</p>
-		</td>
-	</tr>
-	{% endfor %}
-</table>
+{% assign projects_sorted = site.projects | sort: "date" | reverse %}
+{% for project in projects_sorted %}
+<hr />
+<div class="row">
+	<div class="projectThumbnailCell col-sm-2">
+		<img src="{{ project.thumbnail }}" />
+	</div>
+	<div class="projectShortDescCell col-sm-10">
+		<a href="{{ project.url }}"><span class="projectTitle">{{ project.title }}</span></a>
+		<p>{{ project.short_desc }}</p>
+	</div>
+</div>
+{% endfor %}

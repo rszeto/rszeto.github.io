@@ -2,6 +2,12 @@
 ---
 @import "variables";
 
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
 .wrapper-masthead .container {
   background: $white;
 }
@@ -10,43 +16,53 @@ nav {
   background: $umich_blue;
   padding-top: 5px;
   padding-bottom: 5px;
+  text-align: center;
 
   a {
-    color: $white;
+    color: $umich_yellow;
     font-weight: 300;
     font-size: 14pt;
     letter-spacing: 1px;
-    margin-right: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
 
     &:hover, &:active, &:focus {
-      color: $umich_yellow;
+      color: $white;
     }
   }
 }
 
 #masthead-top {
   min-height: 10px;
-  background: $umich_yellow;
+  background: $umich_blue;
 }
 
 #masthead-middle {
   padding-top: 5px;
   padding-bottom: 5px;
+  background: $umich_blue;
+  color: $white;
 }
 
 .site-avatar-container {
-  text-align: right;
-  padding-right: 25px;
+  display: none;
 }
 
-.site-avatar img {
+.site-avatar-container-small {
+  display: inline-block;
+  text-align: center;
+}
+
+.site-avatar-container .site-avatar img {
   height: 70px;
 }
 
-.vcenter {
-  display: inline-block;
-  vertical-align: middle;
-  float: none;
+.site-avatar-container-small .site-avatar img {
+  height: 200px;
+}
+
+.site-info {
+  text-align: center;
 }
 
 .site-name {
@@ -56,4 +72,46 @@ nav {
 
 .site-description {
     font-size: 12pt;
+}
+
+/* 
+ *  Define header on large screens 
+ */
+@media (min-width: 992px) {
+  .site-info {
+    text-align: left;
+  }
+
+  .site-avatar-container-small {
+    display: none;
+  }
+
+  .site-avatar-container {
+    display: inline-block;
+    text-align: right;
+    padding-right: 25px;
+  }
+
+  #masthead-top {
+    background: $umich_yellow;
+  }
+
+  #masthead-middle {
+    background: $white;
+    color: $black;
+  }
+
+  nav {
+    text-align: left;
+
+    a {
+      margin-left: 0px;
+      margin-right: 25px;
+      color: $white;
+
+      &:hover, &:active, &:focus {
+        color: $umich_yellow;
+      }
+    }
+  }
 }

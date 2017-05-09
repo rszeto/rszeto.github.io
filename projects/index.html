@@ -9,10 +9,10 @@ title: Projects
 {% for project in projects_sorted %}
 <hr />
 <div class="row">
-	<div class="projectThumbnailCell col-sm-2">
+	<div class="projectThumbnailCell col-xs-12 col-md-3 vcenter">
 		<img src="{{ project.thumbnail }}" />
-	</div>
-	<div class="projectShortDescCell col-sm-10">
+	</div><!--
+ --><div class="projectShortDescCell col-xs-12 col-md-9 vcenter">
 		<a href="{{ project.url }}"><span class="projectTitle">{{ project.title }}</span></a>
 		<p>{{ project.short_desc }}</p>
 	</div>

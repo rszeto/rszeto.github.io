@@ -10,13 +10,26 @@
 }
 
 .projectThumbnailCell {
+	padding-bottom: 20px;
 	text-align: center;
 }
 
 .projectShortDescCell {
+	text-align: center;
 }
 
 .projectTitle {
 	font-size: 20px;
 	font-weight: bold;
+}
+
+
+@media (min-width: 992px) {
+	.projectThumbnailCell {
+		padding-bottom: 0px;
+	}
+
+	.projectShortDescCell {
+		text-align: left;
+	}
 }

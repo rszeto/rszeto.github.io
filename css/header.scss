@@ -2,12 +2,6 @@
 ---
 @import "variables";
 
-.vcenter {
-  display: inline-block;
-  vertical-align: middle;
-  float: none;
-}
-
 .wrapper-masthead .container {
   background: $white;
 }
@@ -38,8 +32,8 @@ nav {
 }
 
 #masthead-middle {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background: $umich_blue;
   color: $white;
 }
@@ -65,19 +59,23 @@ nav {
   text-align: center;
 }
 
-.site-name {
+.site-name a {
+  font-size: 36pt;
   font-weight: bold;
   margin-bottom: 5px;
+  color: $white;
 }
 
 .site-description {
-    font-size: 12pt;
+    font-size: 13pt;
 }
 
-/* 
- *  Define header on large screens 
- */
+// Define header on large screens 
 @media (min-width: 992px) {
+  .site-name a {
+    color: $black;
+  }
+
   .site-info {
     text-align: left;
   }

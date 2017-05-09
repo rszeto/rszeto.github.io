@@ -24,6 +24,12 @@ body {
   color: $darkGray;
 }
 
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
 /*
 #main {
   background: $white;

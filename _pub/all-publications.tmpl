@@ -2,16 +2,10 @@
 
 <table class="publicationTable">
 <tbody>
-	{%- set prev_year = 1900 %}
 	{%- for entry in entries %}
-		{% if entry.fields['year'] != prev_year %}
 		<tr>
-			<td class="date">
-				<h2>{{ entry.fields['year'] }}</h2>
-			</td>
+			<td><hr></td>
 		</tr>
-		{%- set prev_year = entry.fields['year'] %}
-		{% endif %}
 		<tr>
 			<td class="publication">
 				<span class="title">
@@ -27,7 +21,8 @@
 				<span class="authors">
 					{{ entry.persons['author']|author_list }}
 				</span><br />
-				<span class="venuetype">{{ entry|venue_type -}}</span><span class="venue">{{ entry|venue -}}</span>
+				<span class="venuetype">{{ entry|venue_type -}}</span><span class="venue">{{ entry|venue -}}</span>,
+				<span class="year">{{ entry.fields['year'] }}</span>
 				{%- if entry.fields['note'] %}
 				<span class="note">
 				{{ entry.fields['note']|escape }}

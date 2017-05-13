@@ -4,7 +4,6 @@ short_desc: The project that I worked on with the UMass Center for e-Design duri
 date: 2012-06-01
 authors: [szetor, mcpherson, wileden, skrishna]
 thumbnail: /images/project_thumbs/cad.png
-layout: project
 ---
 
 ### Overview

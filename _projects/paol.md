@@ -4,7 +4,6 @@ short_desc: Automated lecture capture system that I worked on at UMass Amherst.
 date: 2013-06-01
 authors: [szetor, kondrat, pdickson, adrion, richards]
 thumbnail: /images/project_thumbs/umass-placeholder.png
-layout: project
 ---
 
 ### Overview

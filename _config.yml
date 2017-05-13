@@ -86,6 +86,13 @@ collections:
   news:
     output: false
 
+# Define defaults for collections
+defaults:
+  - scope:
+      type: projects
+    values:
+      layout: project
+
 # Set number of blog posts to display per page
 paginate: 10
 paginate_path: "/blog/:num"

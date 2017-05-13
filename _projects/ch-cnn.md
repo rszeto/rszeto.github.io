@@ -4,7 +4,6 @@ short_desc: Improving viewpoint estimation by integrating information about a si
 date: 2017-03-17
 authors: [szetor, jjcorso]
 thumbnail: /images/project_thumbs/ch-cnn.png
-layout: project
 ---
 
 ### Abstract

@@ -27,4 +27,19 @@ layout: default
       </ul>
    </div>
 
+   <div class="news">
+      <h1>News</h1>
+      {% assign sorted_news = site.news | sort: 'date' | reverse %}
+      {% for post in sorted_news %}
+         <div class="newsItem">
+            <div class="date">
+               <p class="dateText">{{ post.date | date: "%m/%d/%Y" }}</p>
+            </div>
+            <div class="content">
+               <span class="contentText">{{ post.content }}</span>
+            </div>
+         </div>
+      {% endfor %}
+   </div>
+
 </div>

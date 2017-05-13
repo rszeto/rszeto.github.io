@@ -1,0 +1,3 @@
+---
+---
+I submitted the paper ["Click Here: Human-Localized Keypoints as Guidance for Viewpoint Estimation"](https://arxiv.org/abs/1703.09859) to ArXiv.

@@ -74,11 +74,14 @@ exclude:
     - Gemfile.lock
     - LICENSE
     - README.md
+    - Makefile
 
 # Define collections that store data, accessible like posts
 collections:
   projects:
     output: true
+  people:
+    output: false
 
 # Set number of blog posts to display per page
 paginate: 10

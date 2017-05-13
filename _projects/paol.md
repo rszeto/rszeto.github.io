@@ -2,15 +2,7 @@
 title: Presentations Automatically Organized from Lectures (PAOL)
 short_desc: Automated lecture capture system that I worked on at UMass Amherst.
 date: 2013-06-01
-authors:
-    - name: Ryan Szeto
-    - name: Chris Kondrat
-    - name: Paul Dickson
-      link: http://jimi.ithaca.edu/~pdickson/
-    - name: Rick Adrion
-      link: https://www.cs.umass.edu/faculty/directory/adrion_richards
-    - name: Tim Richards
-      link: https://www.cs.umass.edu/faculty/directory/richards_tim
+authors: [szetor, kondrat, pdickson, adrion, richards]
 thumbnail: /images/project_thumbs/umass-placeholder.png
 layout: project
 ---

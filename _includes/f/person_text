@@ -1,0 +1,23 @@
+{% comment %}
+Print the name of a person, with a link if the person has a URL. Arguments are:
+	- person_id (string): The identifier of the person. 
+	- use_title (boolean): Whether to include the title in the text.
+
+Example usage: {% include f/person_text person_id="jjcorso" use_title=true %}
+
+Note: Whitespace is included in the HTML. When editing, make sure it does not interfere with rendering.
+{% endcomment %}
+{% assign person = site.people | where: "person_id", include.person_id | first %}
+{% if person.middle_initial %}
+	{% assign full_name = person.first_name | append: " " | append: person.middle_initial | append: ". " | append: person.last_name %}
+{% else %}
+	{% assign full_name = person.first_name | append: " " | append: person.last_name %}
+{% endif %}
+{% if include.use_title and person.title %}
+	{% assign full_name = person.title | append: ". " | append: full_name %}
+{% endif %}
+{% if person.person_url %}<!--
+	--><a href="{{ person.person_url }}" target="_blank">{{ full_name }}</a><!--
+-->{% else %}<!--
+	-->{{ full_name }}<!--
+-->{% endif %}

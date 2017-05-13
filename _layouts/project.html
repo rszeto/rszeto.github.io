@@ -7,18 +7,14 @@ layout: default
 <article class="project">
   <h1 class="projectTitle">{{ page.title }}</h1>
   <p id="authors">
-  {% for author in page.authors %}
+  {% for person_id in page.authors %}
     {% if forloop.last %}
       {% assign author_comma = '' %}
     {% else %}
       {% assign author_comma = ',' %}
     {% endif %}
 
-    {% if author.link %}
-      <a href="{{ author.link }}">{{ author.name }}</a>{{ author_comma }}
-    {% else %}
-       {{ author.name }}{{ author_comma }}
-    {% endif %}
+    {% include f/person_text person_id=person_id use_title=false %}{{ author_comma }}
   {% endfor %}
   </p>
 

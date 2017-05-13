@@ -2,13 +2,7 @@
 title: Feature-Based CAD Data Exchange
 short_desc: The project that I worked on with the UMass Center for e-Design during my REU in summer 2012.
 date: 2012-06-01
-authors:
-    - name: Ryan Szeto
-    - name: Jeffrey McPherson
-    - name: Jack Wileden
-      link: https://www.cs.umass.edu/faculty/directory/wileden_jack
-    - name: Sundar Krishnamurty
-      link: http://mie.umass.edu/faculty/sundar-krishnamurty
+authors: [szetor, mcpherson, wileden, skrishna]
 thumbnail: /images/project_thumbs/cad.png
 layout: project
 ---

@@ -11,11 +11,16 @@
 				<span class="title">
 					{%- set url = entry|main_url %}
 					{%- if url %}
-					<img src="/images/pdficon_small.png" width="16"
-						height="16" alt="PDF" />
-					<a href="{{ url|escape }}">{{ entry|title }}</a>
+						{%- if url.endswith('.pdf') %}
+							<img src="/images/pdficon_small.png" width="16"
+								height="16" alt="PDF" />
+						{%- else %}
+							<img src="/images/linkicon_small.png" width="16"
+								height="16" alt="LINK" />
+						{%- endif %}
+						<a href="{{ url|escape }}">{{ entry|title }}</a>
 					{%- else %}
-					{{ entry|title }}
+						{{ entry|title }}
 					{%- endif %}
 				</span><br />
 				<span class="authors">

@@ -3,7 +3,7 @@ title: A Dataset To Evaluate The Representations Learned By Video Prediction Mod
 short_desc: The Moving Symbols dataset designed to expose generalization issues with existing video prediction networks.
 date: 2018-02-09
 authors: [szetor, sstent, gros, jjcorso]
-thumbnail: /images/project_thumbs/umich-placeholder.png
+thumbnail: /images/project_thumbs/moving-symbols.gif
 ---
 
 ### Abstract

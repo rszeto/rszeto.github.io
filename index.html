@@ -25,7 +25,7 @@ layout: default
    <div class="news">
       <h1>News</h1>
       {% assign sorted_news = site.news | sort: 'date' | reverse %}
-      {% for post in sorted_news %}
+      {% for post in sorted_news limit:5 %}
          <div class="newsItem">
             <div class="date">
                <p class="dateText">{{ post.date | date: "%m/%d/%Y" }}</p>

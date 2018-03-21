@@ -18,6 +18,8 @@ Note: Whitespace is included in the HTML. When editing, make sure it does not in
 {% endif %}
 {% if person.person_url %}<!--
 	--><a href="{{ person.person_url }}" target="_blank">{{ full_name }}</a><!--
+-->{% elsif person.person_id == "szetor" %}<!--
+	--><strong>{{ full_name }}</strong><!--
 -->{% else %}<!--
 	-->{{ full_name }}<!--
 -->{% endif %}

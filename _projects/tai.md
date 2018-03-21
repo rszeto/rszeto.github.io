@@ -14,4 +14,8 @@ We propose the first deep learning solution to video frame inpainting, a challen
 
 [ [arXiv][arXiv] ]
 
-[arXiv]: about:blank
+[arXiv]: https://arxiv.org/abs/1803.07218
+
+### Preprints
+
+{% include pubs/sun2018temporally.html %}

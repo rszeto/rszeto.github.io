@@ -15,6 +15,10 @@ We present a parameterized synthetic dataset called <strong>Moving Symbols</stro
 [arXiv]: https://arxiv.org/abs/1802.08936
 [code]: https://github.com/rszeto/moving-symbols
 
+### Acknowledgements
+
+This project was completed as part of an internship at Toyota Research Institute.
+
 ### Publications
 
 {% include pubs/szeto2018dataset.html %}

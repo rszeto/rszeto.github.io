@@ -3,7 +3,7 @@ title: A Temporally-Aware Interpolation Network for Video Frame Inpainting
 short_desc: Filling in missing frames by blending bidirectional predictions with a temporally-aware interpolation network.
 date: 2018-03-15
 authors: [sunxm, szetor, jjcorso]
-thumbnail: /images/project_thumbs/umich-placeholder.png
+thumbnail: /images/project_thumbs/tai.gif
 ---
 
 ### Abstract

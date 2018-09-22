@@ -25,6 +25,6 @@ We propose the first deep learning solution to video frame inpainting, a challen
 [arXiv]: https://arxiv.org/abs/1803.07218
 [code]: https://github.com/sunxm2357/TAI_video_frame_inpainting
 
-### Preprints
+### Publications
 
 {% include pubs/sun2018temporally.html %}

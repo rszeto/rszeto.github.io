@@ -1,0 +1,6 @@
+channels:
+  - conda-forge
+dependencies:
+  - python=2.7
+  - pybtex=0.21
+  - jinja2=2.10.3

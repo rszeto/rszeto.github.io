@@ -48,11 +48,47 @@ Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Ma
 
 ## Local Development
 
-1. Install Jekyll and plug-ins in one fell swoop. `gem install github-pages` This mirrors the plug-ins used by GitHub Pages on your local machine including Jekyll, Sass, etc.
-2. Clone down your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
-3. Serve the site and watch for markup/sass changes `jekyll serve`
-4. View your website at http://0.0.0.0:4000
-5. Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
+### Install system dependencies
+
+This is required to set up a new computer to develop this website.
+
+1. Install Ruby: https://rubyinstaller.org/downloads/
+	- Check the `ridk install` checkmark at the end to let that command run
+2. Install gems: `gem install jekyll bundler github-pages`
+3. Install Python: https://docs.conda.io/en/latest/miniconda.html
+4. Install Make: http://gnuwin32.sourceforge.net/packages/make.htm
+
+### Set up repo
+
+This is required the first time you clone this repository.
+
+1. Clone the repository
+2. Clone submodules (e.g. bibble): `git submodule init && git submodule update`
+3. Set up Python environment:
+```
+conda create -p ./env
+conda activate ./env
+conda env update -f environment.yml
+```
+
+### Compile publications
+
+This is required whenever you add a new publication.
+
+```
+conda activate ./env
+make clean
+make
+conda deactivate  # Python is only needed when compiling the publication list
+```
+
+### Run server
+
+This is required whenever you want to test the website locally.
+
+```
+jekyll serve
+```
 
 ## Moar!
 

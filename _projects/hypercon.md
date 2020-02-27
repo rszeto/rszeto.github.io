@@ -19,3 +19,7 @@ Video-to-video translation for super-resolution, inpainting, style transfer, etc
 ### Acknowledgements
 
 This project was completed as part of an internship at Samsung Semiconductor, Inc.
+
+### Preprints
+
+{% include pubs/szeto2019hypercon.html %}

@@ -8,3 +8,5 @@ Gemfile.lock
 node_modules
 package.json
 gh-pages/
+.jekyll-cache/
+env/

@@ -7,6 +7,7 @@ import re
 from calendar import month_name
 import os
 import argparse
+import re
 
 _months = {
     'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'may': 5, 'jun': 6,
@@ -161,6 +162,8 @@ def main(bibfile, template, save_path, save_individual=False):
         filtered_v_field_items = filter(lambda x: x[0] not in _ignore_fields_bibtex_source, v.fields.items())
         filtered_v = Entry(v.type, fields=filtered_v_field_items, persons=v.persons)
         v.fields['bibtex'] = BibliographyData({k: filtered_v}).to_string('bibtex').strip()
+        # Replace ' = "XXX"' with '={XXX}'
+        v.fields['bibtex'] = re.sub(r' = \"(.*)\"', r'={\1}', v.fields['bibtex'])
 
     # Render the template.
     bib_sorted = sorted(db.entries.values(), key=_sortkey, reverse=True)

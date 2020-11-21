@@ -3,7 +3,7 @@ title: HyperCon&#58; Image-To-Video Model Transfer for Video-To-Video Translatio
 short_desc: Enabling temporally-consistent style transfer and inpainting via interpolation and aggregation.
 date: 2020-11-21
 authors: [szetor, mostafa, jungwon, jjcorso]
-thumbnail: /images/project_thumbs/umich-placeholder.png
+thumbnail: /images/project_thumbs/hypercon.gif
 ---
 
 <div class="row" style="margin: 20px 0px">

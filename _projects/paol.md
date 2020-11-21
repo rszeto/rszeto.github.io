@@ -9,7 +9,7 @@ thumbnail: /images/project_thumbs/umass-placeholder.png
 <div class="row" style="margin: 20px 0px">
 	<div class="col-xs-12 col-sm-10 col-sm-offset-1">
 		<div class="embed-responsive embed-responsive-16by9">
-		  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VaKMl7q5-RA"></iframe>
+		  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VaKMl7q5-RA" allowfullscreen></iframe>
 		</div>
 	</div>
 </div>

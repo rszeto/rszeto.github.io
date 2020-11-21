@@ -233,6 +233,18 @@ pre {
   margin: 15px 0;
 }
 
+.publication .title {
+    font-weight: bold;
+}
+
+.publication .authors {
+    font-style: normal;
+}
+
+.publication .venue {
+    font-style: italic;
+}
+
 .showBibtex .showBibtexContent {
   background: #EEEEEE;
   font-family: monospace;
